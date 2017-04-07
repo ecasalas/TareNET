@@ -17,33 +17,64 @@ namespace BusinessLogicLayer
             _dal = dal;
         }
 
-        public void AddEmployee(EmployeeTPH emp)
+        public void AddEmployee(Employee emp)
         {
-            throw new NotImplementedException();
+
+            _dal.AddEmployee(emp);
+            //throw new NotImplementedException();
         }
 
         public void DeleteEmployee(int id)
         {
+            _dal.DeleteEmployee(id);
             throw new NotImplementedException();
         }
 
-        public void UpdateEmployee(EmployeeTPH emp)
+        public void UpdateEmployee(Employee emp)
         {
+            _dal.UpdateEmployee(emp);
             throw new NotImplementedException();
         }
 
-        public List<EmployeeTPH> GetAllEmployees()
+        public List<Employee> GetAllEmployees()
         {
+            List<Employee> lemp = _dal.GetAllEmployees();
+
+            return lemp;
             throw new NotImplementedException();
         }
 
-        public EmployeeTPH GetEmployee(int id)
+        public Employee GetEmployee(int id)
         {
+            Employee emp = _dal.GetEmployee(id);
+            return emp;
             throw new NotImplementedException();
         }
 
         public double CalcPartTimeEmployeeSalary(int idEmployee, int hours)
         {
+            try
+            {
+                Employee emp = _dal.GetEmployee(idEmployee);
+
+                if (emp is FullTimeEmployee)
+                {
+                    Console.WriteLine("El empleado de id"+idEmployee+" es Full Time");
+                }
+                else if ( emp is null)
+                {
+                    Console.WriteLine("El empleado que usted selecciono, no se encuentra en la base de datos");
+                }
+                else
+                {
+                    double rate = new PartTimeEmployee().HourlyRate;
+                    return rate * hours;
+                }
+            }
+            catch
+            {
+                //esto mepa que es cualquier cagada... revisar
+            }
             throw new NotImplementedException();
         }
     }

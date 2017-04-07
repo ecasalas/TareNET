@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shared.Entities
 {
-    public class PartTimeEmployee : EmployeeTPH
+    public class PartTimeEmployee : Employee
     {
         public double HourlyRate { get; set; }
     }
