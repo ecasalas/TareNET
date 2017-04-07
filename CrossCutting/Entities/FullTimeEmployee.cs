@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shared.Entities
 {
-    public class FullTimeEmployee : EmployeeTPH
+    public class FullTimeEmployee : Employee
     {
         public int Salary { get; set; }
     }

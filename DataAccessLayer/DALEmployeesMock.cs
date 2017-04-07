@@ -9,7 +9,7 @@ namespace DataAccessLayer
 {
     public class DALEmployeesMock : IDALEmployees
     {
-        private List<EmployeeTPH> employeesRepository = new List<EmployeeTPH>()
+        private List<Employee> employeesRepository = new List<Employee>()
         {
             new PartTimeEmployee(){HourlyRate = 100},
             new PartTimeEmployee(){HourlyRate = 150},
@@ -23,7 +23,7 @@ namespace DataAccessLayer
             new FullTimeEmployee(){},
         };
 
-        public void AddEmployee(EmployeeTPH emp)
+        public void AddEmployee(Employee emp)
         {
             throw new NotImplementedException();
         }
@@ -33,17 +33,17 @@ namespace DataAccessLayer
             throw new NotImplementedException();
         }
 
-        public void UpdateEmployee(EmployeeTPH emp)
+        public void UpdateEmployee(Employee emp)
         {
             throw new NotImplementedException();
         }
 
-        public List<EmployeeTPH> GetAllEmployees()
+        public List<Employee> GetAllEmployees()
         {
             return employeesRepository;
         }
 
-        public EmployeeTPH GetEmployee(int id)
+        public Employee GetEmployee(int id)
         {
             throw new NotImplementedException();
         }

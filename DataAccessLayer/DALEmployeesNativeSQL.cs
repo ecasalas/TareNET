@@ -9,7 +9,7 @@ namespace DataAccessLayer
 {
     public class DALEmployeesNativeSQL : IDALEmployees
     {
-        public void AddEmployee(EmployeeTPH emp)
+        public void AddEmployee(Employee emp)
         {
             throw new NotImplementedException();
         }
@@ -19,17 +19,17 @@ namespace DataAccessLayer
             throw new NotImplementedException();
         }
 
-        public void UpdateEmployee(EmployeeTPH emp)
+        public void UpdateEmployee(Employee emp)
         {
             throw new NotImplementedException();
         }
 
-        public List<EmployeeTPH> GetAllEmployees()
+        public List<Employee> GetAllEmployees()
         {
             throw new NotImplementedException();
         }
 
-        public EmployeeTPH GetEmployee(int id)
+        public Employee GetEmployee(int id)
         {
             throw new NotImplementedException();
         }

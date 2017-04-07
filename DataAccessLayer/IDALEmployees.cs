@@ -9,14 +9,14 @@ namespace DataAccessLayer
 {
     public interface IDALEmployees
     {
-        void AddEmployee(EmployeeTPH emp);
+        void AddEmployee(Employee emp);
 
         void DeleteEmployee(int id);
 
-        void UpdateEmployee(EmployeeTPH emp);
+        void UpdateEmployee(Employee emp);
 
-        List<EmployeeTPH> GetAllEmployees();
+        List<Employee> GetAllEmployees();
 
-        EmployeeTPH GetEmployee(int id);
+        Employee GetEmployee(int id);
     }
 }
