@@ -1,0 +1,10 @@
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\PresentationLayerWinform\bin\x64\Debug\PresentationLayerWinform.exe.config
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\PresentationLayerWinform\bin\x64\Debug\PresentationLayerWinform.exe
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\PresentationLayerWinform\bin\x64\Debug\PresentationLayerWinform.pdb
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.csprojResolveAssemblyReference.cache
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.EmployeeAddEdit.resources
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.EmployeeList.resources
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.Properties.Resources.resources
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.csproj.GenerateResource.Cache
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.exe
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.pdb

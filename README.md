@@ -1,2 +1,0 @@
-# TareNET
-Practico1

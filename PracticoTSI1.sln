@@ -1,21 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-
 VisualStudioVersion = 15.0.26228.9
-
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "..\CrossCutting\Shared.csproj", "{8B1E409E-8EB8-4171-8D99-5DB230DA4889}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "CrossCutting\Shared.csproj", "{8B1E409E-8EB8-4171-8D99-5DB230DA4889}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "..\DataAccessLayer\DataAccessLayer.csproj", "{135E79F3-5B60-4253-8CA1-53DFE3A6024B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{135E79F3-5B60-4253-8CA1-53DFE3A6024B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogicLayer", "..\BusinessLogicLayer\BusinessLogicLayer.csproj", "{A07AA8DF-3A92-4CC5-B111-5DEA0447C2A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogicLayer", "BusinessLogicLayer\BusinessLogicLayer.csproj", "{A07AA8DF-3A92-4CC5-B111-5DEA0447C2A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "..\Test\Test.csproj", "{F9012234-34A5-42C3-A584-98909AA81E65}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{F9012234-34A5-42C3-A584-98909AA81E65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLayer", "..\ServiceLayer\ServiceLayer.csproj", "{E09D6C36-A3C2-4B9C-A407-D57E483A911C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLayer", "ServiceLayer\ServiceLayer.csproj", "{E09D6C36-A3C2-4B9C-A407-D57E483A911C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationLayerWinform", "..\PresentationLayerWinform\PresentationLayerWinform.csproj", "{9D716F2C-DC6A-4B4E-8952-5D560D79C48C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationLayerWinform", "PresentationLayerWinform\PresentationLayerWinform.csproj", "{9D716F2C-DC6A-4B4E-8952-5D560D79C48C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
