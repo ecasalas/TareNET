@@ -1,4 +1,5 @@
 ﻿//using DataAccessLayer.Model;
+using DataAccessLayer.Model;
 using Shared.Entities;
 using System;
 using System.Collections.Generic;
@@ -26,9 +27,9 @@ namespace DataAccessLayer
 
         public void DeleteEmployee(int id)
         {
-            Model.Practico1TSIEntities db = new Model.Practico1TSIEntities();
+            Model.Practico1TSIEntities db = new Practico1TSIEntities();
             var emp = db.EmployeesTPH.Find(id);
-            db.EmployeesTPH.Attach(emp);
+            db.Entry(emp).State = System.Data.Entity.EntityState.Deleted;
             db.SaveChanges();
 
         }
@@ -116,14 +117,15 @@ namespace DataAccessLayer
         }
         public void AddPartTimeEmployee(Shared.Entities.PartTimeEmployee emp)
         {
-            var context = new Model.Practico1TSIEntities();
+            var context = new Practico1TSIEntities();
             var t = new Model.PartTimeEmployee();
 
             t.Name = emp.Name;
-            t.EmployeeID = emp.Id;
+            //t.EmployeeID = emp.Id;
             t.StartDate = emp.StartDate;
             t.HourlyRate = emp.HourlyRate;
             context.EmployeesTPH.Add(t);
+            context.SaveChanges();
         }
 
         public void AddFullTimeEmployee(Shared.Entities.FullTimeEmployee emp)
@@ -135,8 +137,9 @@ namespace DataAccessLayer
             t.Name = emp.Name;
             t.EmployeeID = emp.Id;
             t.StartDate = emp.StartDate;
-            t.Salary = emp.Salary;
+            t.Salary = (Int16)emp.Salary;
             bd.EmployeesTPH.Add(t);
+            bd.SaveChanges();
         }
     }
 }

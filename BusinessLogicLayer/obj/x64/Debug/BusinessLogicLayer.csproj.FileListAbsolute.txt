@@ -17,3 +17,22 @@ C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\BusinessLogicLayer\bin\
 C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\BusinessLogicLayer\obj\x64\Debug\BusinessLogicLayer.csprojResolveAssemblyReference.cache
 C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\BusinessLogicLayer\obj\x64\Debug\BusinessLogicLayer.dll
 C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\BusinessLogicLayer\obj\x64\Debug\BusinessLogicLayer.pdb
+C:\Users\Admin\Source\Repos\TareNET\BusinessLogicLayer\bin\x64\Debug\BusinessLogicLayer.dll
+C:\Users\Admin\Source\Repos\TareNET\BusinessLogicLayer\bin\x64\Debug\BusinessLogicLayer.pdb
+C:\Users\Admin\Source\Repos\TareNET\BusinessLogicLayer\bin\x64\Debug\DataAccessLayer.dll
+C:\Users\Admin\Source\Repos\TareNET\BusinessLogicLayer\bin\x64\Debug\Shared.dll
+C:\Users\Admin\Source\Repos\TareNET\BusinessLogicLayer\bin\x64\Debug\MongoDB.Driver.dll
+C:\Users\Admin\Source\Repos\TareNET\BusinessLogicLayer\bin\x64\Debug\MongoDB.Bson.dll
+C:\Users\Admin\Source\Repos\TareNET\BusinessLogicLayer\bin\x64\Debug\EntityFramework.dll
+C:\Users\Admin\Source\Repos\TareNET\BusinessLogicLayer\bin\x64\Debug\MongoDB.Driver.Core.dll
+C:\Users\Admin\Source\Repos\TareNET\BusinessLogicLayer\bin\x64\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Admin\Source\Repos\TareNET\BusinessLogicLayer\bin\x64\Debug\Shared.pdb
+C:\Users\Admin\Source\Repos\TareNET\BusinessLogicLayer\bin\x64\Debug\DataAccessLayer.pdb
+C:\Users\Admin\Source\Repos\TareNET\BusinessLogicLayer\bin\x64\Debug\DataAccessLayer.dll.config
+C:\Users\Admin\Source\Repos\TareNET\BusinessLogicLayer\bin\x64\Debug\MongoDB.Driver.xml
+C:\Users\Admin\Source\Repos\TareNET\BusinessLogicLayer\bin\x64\Debug\MongoDB.Bson.xml
+C:\Users\Admin\Source\Repos\TareNET\BusinessLogicLayer\bin\x64\Debug\EntityFramework.xml
+C:\Users\Admin\Source\Repos\TareNET\BusinessLogicLayer\bin\x64\Debug\MongoDB.Driver.Core.xml
+C:\Users\Admin\Source\Repos\TareNET\BusinessLogicLayer\obj\x64\Debug\BusinessLogicLayer.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Source\Repos\TareNET\BusinessLogicLayer\obj\x64\Debug\BusinessLogicLayer.dll
+C:\Users\Admin\Source\Repos\TareNET\BusinessLogicLayer\obj\x64\Debug\BusinessLogicLayer.pdb

@@ -10,7 +10,7 @@ namespace BusinessLogicLayer
 {
     public class BLEmployees : IBLEmployees
     {
-       private IDALEmployees _dal;
+        private IDALEmployees _dal;
 
         public BLEmployees(IDALEmployees dal)
         {
@@ -27,13 +27,13 @@ namespace BusinessLogicLayer
         public void DeleteEmployee(int id)
         {
             _dal.DeleteEmployee(id);
-            throw new NotImplementedException();
+           
         }
 
         public void UpdateEmployee(Employee emp)
         {
             _dal.UpdateEmployee(emp);
-            throw new NotImplementedException();
+           
         }
 
         public List<Employee> GetAllEmployees()
@@ -41,41 +41,32 @@ namespace BusinessLogicLayer
             List<Employee> lemp = _dal.GetAllEmployees();
 
             return lemp;
-            throw new NotImplementedException();
+            
         }
 
         public Employee GetEmployee(int id)
         {
             Employee emp = _dal.GetEmployee(id);
             return emp;
-            throw new NotImplementedException();
+           
         }
 
         public double CalcPartTimeEmployeeSalary(int idEmployee, int hours)
         {
+            double rate;
             try
-            {
-                Employee emp = _dal.GetEmployee(idEmployee);
+            { 
 
-                if (emp is FullTimeEmployee)
-                {
-                    Console.WriteLine("El empleado de id"+idEmployee+" es Full Time");
-                }
-                else if ( emp is null)
-                {
-                    Console.WriteLine("El empleado que usted selecciono, no se encuentra en la base de datos");
-                }
-                else
-                {
-                    double rate = new PartTimeEmployee().HourlyRate;
-                    return rate * hours;
-                }
+                PartTimeEmployee emp = (PartTimeEmployee)_dal.GetEmployee(idEmployee);
+                rate = hours * emp.HourlyRate;
+                return rate;
             }
             catch
             {
-                //esto mepa que es cualquier cagada... revisar
+                throw new InvalidCastException();
             }
-            throw new NotImplementedException();
+
         }
+
     }
 }

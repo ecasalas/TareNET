@@ -17,3 +17,22 @@ C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\DataAccessLayer\bin\x64
 C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\DataAccessLayer\obj\x64\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
 C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\DataAccessLayer\obj\x64\Debug\DataAccessLayer.dll
 C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\DataAccessLayer\obj\x64\Debug\DataAccessLayer.pdb
+C:\Users\Admin\Source\Repos\TareNET\DataAccessLayer\bin\x64\Debug\DataAccessLayer.dll.config
+C:\Users\Admin\Source\Repos\TareNET\DataAccessLayer\bin\x64\Debug\DataAccessLayer.dll
+C:\Users\Admin\Source\Repos\TareNET\DataAccessLayer\bin\x64\Debug\DataAccessLayer.pdb
+C:\Users\Admin\Source\Repos\TareNET\DataAccessLayer\bin\x64\Debug\EntityFramework.dll
+C:\Users\Admin\Source\Repos\TareNET\DataAccessLayer\bin\x64\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Source\Repos\TareNET\DataAccessLayer\bin\x64\Debug\MongoDB.Bson.dll
+C:\Users\Admin\Source\Repos\TareNET\DataAccessLayer\bin\x64\Debug\MongoDB.Driver.Core.dll
+C:\Users\Admin\Source\Repos\TareNET\DataAccessLayer\bin\x64\Debug\MongoDB.Driver.dll
+C:\Users\Admin\Source\Repos\TareNET\DataAccessLayer\bin\x64\Debug\Shared.dll
+C:\Users\Admin\Source\Repos\TareNET\DataAccessLayer\bin\x64\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Admin\Source\Repos\TareNET\DataAccessLayer\bin\x64\Debug\Shared.pdb
+C:\Users\Admin\Source\Repos\TareNET\DataAccessLayer\bin\x64\Debug\EntityFramework.xml
+C:\Users\Admin\Source\Repos\TareNET\DataAccessLayer\bin\x64\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Source\Repos\TareNET\DataAccessLayer\bin\x64\Debug\MongoDB.Bson.xml
+C:\Users\Admin\Source\Repos\TareNET\DataAccessLayer\bin\x64\Debug\MongoDB.Driver.xml
+C:\Users\Admin\Source\Repos\TareNET\DataAccessLayer\bin\x64\Debug\MongoDB.Driver.Core.xml
+C:\Users\Admin\Source\Repos\TareNET\DataAccessLayer\obj\x64\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Source\Repos\TareNET\DataAccessLayer\obj\x64\Debug\DataAccessLayer.dll
+C:\Users\Admin\Source\Repos\TareNET\DataAccessLayer\obj\x64\Debug\DataAccessLayer.pdb

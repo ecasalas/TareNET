@@ -12,7 +12,7 @@ namespace DataAccessLayer.Model
     using System;
     using System.Collections.Generic;
     
-    public abstract partial class Employee
+    public abstract partial class Employees
     {
         public int EmployeeID { get; set; }
         public string Name { get; set; }

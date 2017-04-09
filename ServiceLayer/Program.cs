@@ -34,9 +34,10 @@ namespace ServiceLayer
             pte.Name = "pimba";
             pte.StartDate = new DateTime(2019,11,11);
             pte.HourlyRate = 178.0f;
+            Console.WriteLine("voy a inserttar");
 
-            blHandler.AddEmployee(pte);
-            
+           // blHandler.AddEmployee(pte);
+            blHandler.DeleteEmployee(1);
 
             Console.WriteLine("mierda");
             Console.ReadKey();
@@ -48,8 +49,8 @@ namespace ServiceLayer
 
         private static void SetupDependencies()
         {
-            
-                blHandler = new BLEmployees(new DataAccessLayer.DALEmployeesMongo());
+
+            blHandler = new BLEmployees(new DataAccessLayer.DALEmployeesEF());
                 //blHandler = new BLEmployees(new DataAccessLayer.DALEmployeesEF());
            
             

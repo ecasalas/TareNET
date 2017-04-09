@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TAREANETModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="EmployeesTPH">
+    <Key>
+      <PropertyRef Name="EMP_ID" />
+      <PropertyRef Name="NAME" />
+      <PropertyRef Name="START_DATE" />
+      <PropertyRef Name="TYPE_EMP" />
+    </Key>
+    <Property Name="EMP_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NAME" Type="String" MaxLength="255" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="START_DATE" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="SALARY" Type="Int32" />
+    <Property Name="RATE" Type="Double" />
+    <Property Name="TYPE_EMP" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="TAREANETEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="EmployeesTPH" EntityType="Self.EmployeesTPH" />
+  </EntityContainer>
+</Schema>

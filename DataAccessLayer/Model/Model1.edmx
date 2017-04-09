@@ -9,11 +9,11 @@
           <Key>
             <PropertyRef Name="EMP_ID" />
           </Key>
-          <Property Name="EMP_ID" Type="int" Nullable="false" />
-          <Property Name="NAME" Type="varchar" MaxLength="255" Nullable="false" />
-          <Property Name="START_DATE" Type="datetime" Nullable="false" />
-          <Property Name="SALARY" Type="int" StoreGeneratedPattern="Identity" />
-          <Property Name="RATE" Type="float" StoreGeneratedPattern="Identity" />
+          <Property Name="EMP_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NAME" Type="nchar" MaxLength="255" Nullable="false" />
+          <Property Name="START_DATE" Type="date" Nullable="false" />
+          <Property Name="SALARY" Type="int" />
+          <Property Name="RATE" Type="float" />
           <Property Name="TYPE_EMP" Type="int" Nullable="false" />
         </EntityType>
         <EntityContainer Name="Practico1TSIModelStoreContainer">
@@ -24,22 +24,22 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="Practico1TSIModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="Employee" Abstract="true">
+        <EntityType Name="Employees" Abstract="true">
           <Key>
             <PropertyRef Name="EmployeeID" />
           </Key>
-          <Property Name="EmployeeID" Type="Int32" Nullable="false" />
-          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="StartDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="EmployeeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="StartDate" Type="DateTime" Nullable="false" Precision="0" />
         </EntityType>
         <EntityContainer Name="Practico1TSIEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="EmployeesTPH" EntityType="Practico1TSIModel.Employee" />
+          <EntitySet Name="EmployeesTPH" EntityType="Practico1TSIModel.Employees" />
         </EntityContainer>
-        <EntityType Name="FullTimeEmployee" BaseType="Practico1TSIModel.Employee">
-          <Property Name="Salary" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        <EntityType Name="PartTimeEmployee" BaseType="Practico1TSIModel.Employees" >
+          <Property Name="HourlyRate" Type="Double" Nullable="false" />
         </EntityType>
-        <EntityType Name="PartTimeEmployee" BaseType="Practico1TSIModel.Employee">
-          <Property Name="HourlyRate" Type="Double" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        <EntityType Name="FullTimeEmployee" BaseType="Practico1TSIModel.Employees" >
+          <Property Name="Salary" Type="Int16" Nullable="false" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -48,6 +48,13 @@
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="Practico1TSIModelStoreContainer" CdmEntityContainer="Practico1TSIEntities">
           <EntitySetMapping Name="EmployeesTPH">
+            <EntityTypeMapping TypeName="IsTypeOf(Practico1TSIModel.Employees)">
+              <MappingFragment StoreEntitySet="EmployeesTPH">
+                <ScalarProperty Name="EmployeeID" ColumnName="EMP_ID" />
+                <ScalarProperty Name="StartDate" ColumnName="START_DATE" />
+                <ScalarProperty Name="Name" ColumnName="NAME" />
+              </MappingFragment>
+            </EntityTypeMapping>
             <EntityTypeMapping TypeName="IsTypeOf(Practico1TSIModel.PartTimeEmployee)">
               <MappingFragment StoreEntitySet="EmployeesTPH">
                 <ScalarProperty Name="HourlyRate" ColumnName="RATE" />
@@ -57,16 +64,9 @@
             </EntityTypeMapping>
             <EntityTypeMapping TypeName="IsTypeOf(Practico1TSIModel.FullTimeEmployee)">
               <MappingFragment StoreEntitySet="EmployeesTPH">
-                <ScalarProperty Name="EmployeeID" ColumnName="EMP_ID" />
                 <ScalarProperty Name="Salary" ColumnName="SALARY" />
-                <Condition ColumnName="TYPE_EMP" Value="2" />
-              </MappingFragment>
-            </EntityTypeMapping>
-            <EntityTypeMapping TypeName="IsTypeOf(Practico1TSIModel.Employee)">
-              <MappingFragment StoreEntitySet="EmployeesTPH">
                 <ScalarProperty Name="EmployeeID" ColumnName="EMP_ID" />
-                <ScalarProperty Name="StartDate" ColumnName="START_DATE" />
-                <ScalarProperty Name="Name" ColumnName="NAME" />
+                <Condition ColumnName="TYPE_EMP" Value="2" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
