@@ -8,3 +8,29 @@ C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\PresentationLayerWinfor
 C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.csproj.GenerateResource.Cache
 C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.exe
 C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.pdb
+C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\bin\x64\Debug\PresentationLayerWinform.exe.config
+C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\bin\x64\Debug\PresentationLayerWinform.exe
+C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\bin\x64\Debug\PresentationLayerWinform.pdb
+C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.csprojResolveAssemblyReference.cache
+C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.EmployeeAddEdit.resources
+C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.EmployeeList.resources
+C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.Properties.Resources.resources
+C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.csproj.GenerateResource.Cache
+C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.exe
+C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.pdb
+C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\bin\x64\Debug\BusinessLogicLayer.dll
+C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\bin\x64\Debug\Shared.dll
+C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\bin\x64\Debug\DataAccessLayer.dll
+C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\bin\x64\Debug\MongoDB.Driver.dll
+C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\bin\x64\Debug\MongoDB.Bson.dll
+C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\bin\x64\Debug\EntityFramework.dll
+C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\bin\x64\Debug\MongoDB.Driver.Core.dll
+C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\bin\x64\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\bin\x64\Debug\BusinessLogicLayer.pdb
+C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\bin\x64\Debug\Shared.pdb
+C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\bin\x64\Debug\DataAccessLayer.pdb
+C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\bin\x64\Debug\DataAccessLayer.dll.config
+C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\bin\x64\Debug\MongoDB.Driver.xml
+C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\bin\x64\Debug\MongoDB.Bson.xml
+C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\bin\x64\Debug\EntityFramework.xml
+C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\bin\x64\Debug\MongoDB.Driver.Core.xml
