@@ -36,12 +36,13 @@ namespace DataAccessLayer
 
         public void UpdateEmployee(Employee emp)
         {
-            using (var db = new Model.Practico1TSIEntities())
+            if (emp is Shared.Entities.PartTimeEmployee)
             {
-                var objEmp = db.EmployeesTPH.Find(emp.Id);
-                db.EmployeesTPH.Attach(objEmp);
-                db.Entry(emp).State = System.Data.Entity.EntityState.Modified;
-                db.SaveChanges();
+                UpdatePartTimeEmployee((Shared.Entities.PartTimeEmployee)emp);
+            }
+            else
+            {
+                UpdateFullTimeEmployee((Shared.Entities.FullTimeEmployee)emp);
             }
         }
 
@@ -49,34 +50,32 @@ namespace DataAccessLayer
         {
             //creo lista vacia de tipo shared para retornar
             List<Employee> empList = new List<Employee>();
-            using (var db = new Model.Practico1TSIEntities())
+
+            var db = new Practico1TSIEntities();
+            List<Model.PartTimeEmployee> empQuery = db.EmployeesTPH.OfType<Model.PartTimeEmployee>().ToList();
+
+
+            foreach (var emp in empQuery)
             {
-                var empQuery = from emp in db.EmployeesTPH.OfType<Model.PartTimeEmployee>()
-                               select emp;
-
                 var objEmp = new Shared.Entities.PartTimeEmployee();
-                foreach (var emp in empQuery)
-                {
+                objEmp.Id = emp.EmployeeID;
+                objEmp.Name = emp.Name;
+                objEmp.StartDate = emp.StartDate;
+                objEmp.HourlyRate = emp.HourlyRate;
+                empList.Add(objEmp);
+            }
 
+            var empQueryF = from empF in db.EmployeesTPH.OfType<Model.FullTimeEmployee>()
+                            select empF;
 
-                    objEmp.Id = emp.EmployeeID;
-                    objEmp.Name = emp.Name;
-                    objEmp.StartDate = emp.StartDate;
-                    objEmp.HourlyRate = emp.HourlyRate;
-                    empList.Add(objEmp);
-                }
-
-                var empQueryF = from empF in db.EmployeesTPH.OfType<Model.FullTimeEmployee>()
-                                select empF;
+            foreach (var empF in empQueryF)
+            {
                 var objEmp2 = new Shared.Entities.FullTimeEmployee();
-                foreach (var empF in empQueryF)
-                {
-                    objEmp2.Id = empF.EmployeeID;
-                    objEmp2.Name = empF.Name;
-                    objEmp2.StartDate = empF.StartDate;
-                    objEmp2.Salary = empF.Salary;
-                    empList.Add(objEmp);
-                }
+                objEmp2.Id = empF.EmployeeID;
+                objEmp2.Name = empF.Name;
+                objEmp2.StartDate = empF.StartDate;
+                objEmp2.Salary = empF.Salary;
+                empList.Add(objEmp2);
 
             }
             return empList;
@@ -85,35 +84,24 @@ namespace DataAccessLayer
         public Employee GetEmployee(int id)
         {
             Model.Practico1TSIEntities db = new Model.Practico1TSIEntities();
-            var empQuery = from Employee in db.EmployeesTPH
-                           where Employee.EmployeeID == id
-                           select Employee;
+            var empQuery = (from Employee in db.EmployeesTPH
+                      where Employee.EmployeeID == id
+                      select Employee).FirstOrDefault();
+                      
 
-            Employee emp;
-
+           
             if (empQuery is Model.PartTimeEmployee)
             {
-                Model.PartTimeEmployee objEmp = (Model.PartTimeEmployee)empQuery.Single();
-                var retorno = new Shared.Entities.PartTimeEmployee();
-                retorno.Id = objEmp.EmployeeID;
-                retorno.Name = objEmp.Name;
-                retorno.StartDate = objEmp.StartDate;
-                retorno.HourlyRate = objEmp.HourlyRate;
-                emp = retorno;
+
+                return GetPartTimeEmployee(id);
             }
             else
             {
-                Model.FullTimeEmployee objEmp = (Model.FullTimeEmployee)empQuery.Single();
-                var retorno = new Shared.Entities.FullTimeEmployee();
-                retorno.Id = objEmp.EmployeeID;
-                retorno.Name = objEmp.Name;
-                retorno.StartDate = objEmp.StartDate;
-                retorno.Salary = objEmp.Salary;
-                emp = retorno;
+                return GetFullTimeEmployee(id);
             }
 
 
-            return emp;
+           
         }
         public void AddPartTimeEmployee(Shared.Entities.PartTimeEmployee emp)
         {
@@ -140,6 +128,62 @@ namespace DataAccessLayer
             t.Salary = (Int16)emp.Salary;
             bd.EmployeesTPH.Add(t);
             bd.SaveChanges();
+        }
+        public void UpdatePartTimeEmployee(Shared.Entities.PartTimeEmployee emp)
+        {
+            var db = new Model.Practico1TSIEntities();
+            var objEmp = db.EmployeesTPH.Find(emp.Id);
+
+            Model.PartTimeEmployee empF = new Model.PartTimeEmployee();
+            empF.EmployeeID = emp.Id;
+            empF.Name = emp.Name;
+            empF.StartDate = emp.StartDate;
+            empF.HourlyRate = emp.HourlyRate;
+
+            db.EmployeesTPH.Remove(objEmp);
+            db.EmployeesTPH.Add(empF);
+            db.SaveChanges();
+        }
+        public void UpdateFullTimeEmployee(Shared.Entities.FullTimeEmployee emp)
+        {
+            var db = new Model.Practico1TSIEntities();
+            var objEmp = db.EmployeesTPH.Find(emp.Id);
+
+            Model.FullTimeEmployee empF = new Model.FullTimeEmployee();
+            empF.EmployeeID = emp.Id;
+            empF.Name = emp.Name;
+            empF.StartDate = emp.StartDate;
+            empF.Salary = (short)emp.Salary;
+
+            db.EmployeesTPH.Remove(objEmp);
+            db.EmployeesTPH.Add(empF);
+            db.SaveChanges();
+        }
+        public Shared.Entities.PartTimeEmployee GetPartTimeEmployee(int id)
+        {
+           var db = new Practico1TSIEntities();
+            Model.PartTimeEmployee objEmp = db.EmployeesTPH.OfType<Model.PartTimeEmployee>().Where(e => e.EmployeeID==id).FirstOrDefault();
+            Shared.Entities.PartTimeEmployee emp = new Shared.Entities.PartTimeEmployee();
+            emp.Id = objEmp.EmployeeID;
+            emp.Name = objEmp.Name;
+            emp.StartDate = objEmp.StartDate;
+            emp.HourlyRate = objEmp.HourlyRate;
+            return emp;
+            
+        }
+        public Shared.Entities.FullTimeEmployee GetFullTimeEmployee(int id)
+        {
+            var db = new Practico1TSIEntities();
+            Model.FullTimeEmployee objEmp= db.EmployeesTPH.OfType<Model.FullTimeEmployee>().Where(e => e.EmployeeID == id).FirstOrDefault();
+            
+            var retorno = new Shared.Entities.FullTimeEmployee();
+            retorno.Id = objEmp.EmployeeID;
+            retorno.Name = objEmp.Name;
+            retorno.StartDate = objEmp.StartDate;
+            retorno.Salary = objEmp.Salary;
+            return retorno;
+            
+
         }
     }
 }

@@ -55,10 +55,16 @@ namespace BusinessLogicLayer
         {
             double rate;
             try
-            { 
-
-                PartTimeEmployee emp = (PartTimeEmployee)_dal.GetEmployee(idEmployee);
+            {
+                Console.WriteLine("Empleado :"+idEmployee);
+                Console.WriteLine("Horas : " +hours);
+                var emp = (Shared.Entities.PartTimeEmployee)_dal.GetEmployee(idEmployee);
+                
+                Console.WriteLine(emp.Name);
+                Console.WriteLine("RATE: "+emp.HourlyRate);
                 rate = hours * emp.HourlyRate;
+                
+               // rate = hours * emp.HourlyRate;
                 return rate;
             }
             catch

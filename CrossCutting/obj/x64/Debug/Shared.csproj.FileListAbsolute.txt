@@ -2,3 +2,8 @@ C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\CrossCutting\bin\x64\De
 C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\CrossCutting\bin\x64\Debug\Shared.pdb
 C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\CrossCutting\obj\x64\Debug\Shared.dll
 C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\CrossCutting\obj\x64\Debug\Shared.pdb
+C:\Users\Admin\Source\Repos\TareNET\CrossCutting\bin\x64\Debug\Shared.dll
+C:\Users\Admin\Source\Repos\TareNET\CrossCutting\bin\x64\Debug\Shared.pdb
+C:\Users\Admin\Source\Repos\TareNET\CrossCutting\obj\x64\Debug\Shared.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Source\Repos\TareNET\CrossCutting\obj\x64\Debug\Shared.dll
+C:\Users\Admin\Source\Repos\TareNET\CrossCutting\obj\x64\Debug\Shared.pdb

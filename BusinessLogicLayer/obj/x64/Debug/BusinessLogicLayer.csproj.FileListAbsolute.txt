@@ -36,3 +36,5 @@ C:\Users\Admin\Source\Repos\TareNET\BusinessLogicLayer\bin\x64\Debug\MongoDB.Dri
 C:\Users\Admin\Source\Repos\TareNET\BusinessLogicLayer\obj\x64\Debug\BusinessLogicLayer.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Source\Repos\TareNET\BusinessLogicLayer\obj\x64\Debug\BusinessLogicLayer.dll
 C:\Users\Admin\Source\Repos\TareNET\BusinessLogicLayer\obj\x64\Debug\BusinessLogicLayer.pdb
+C:\Users\Admin\Source\Repos\TareNET\BusinessLogicLayer\bin\x64\Debug\BusinessLogicLayer.dll.CodeAnalysisLog.xml
+C:\Users\Admin\Source\Repos\TareNET\BusinessLogicLayer\bin\x64\Debug\BusinessLogicLayer.dll.lastcodeanalysissucceeded

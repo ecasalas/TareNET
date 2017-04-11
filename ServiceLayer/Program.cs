@@ -20,26 +20,27 @@ namespace ServiceLayer
     class Program
     {
         public static IBLEmployees blHandler;
-        
 
-        
+
+
         static void Main(string[] args)
         {
 
             SetupDependencies();
             SetupService();
 
-            PartTimeEmployee pte = new PartTimeEmployee();
-            pte.Id = 18999;
-            pte.Name = "pimba";
+            FullTimeEmployee  pte = new FullTimeEmployee();
+            pte.Id = 2;
+            pte.Name = "Jorge";
             pte.StartDate = new DateTime(2019,11,11);
-            pte.HourlyRate = 178.0f;
+            pte.Salary = 17800;
             Console.WriteLine("voy a inserttar");
 
-           // blHandler.AddEmployee(pte);
-            blHandler.DeleteEmployee(1);
+            // blHandler.AddEmployee(pte);
+            // blHandler.DeleteEmployee(1);
+            double emp = blHandler.CalcPartTimeEmployeeSalary(3,10);
 
-            Console.WriteLine("mierda");
+            Console.WriteLine("Calculo de sueldo: "+emp);
             Console.ReadKey();
             
 
@@ -50,8 +51,8 @@ namespace ServiceLayer
         private static void SetupDependencies()
         {
 
-            blHandler = new BLEmployees(new DataAccessLayer.DALEmployeesEF());
-                //blHandler = new BLEmployees(new DataAccessLayer.DALEmployeesEF());
+            //blHandler = new BLEmployees( new DataAccessLayer.DALEmployeesEF());
+               blHandler = new BLEmployees(new DataAccessLayer.DALEmployeesEF());
            
             
         }
