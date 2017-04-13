@@ -68,10 +68,18 @@ namespace PresentationLayerWinform
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
             if (this.txtType.Text != "")
+            {
                 if (Convert.ToInt32(this.txtType.Text) == 1)
                 {
                     txtSalary.Enabled = true;
+                    txtRate.Enabled = false;
                 }
+                if (Convert.ToInt32(this.txtType.Text) == 2)
+                {
+                    txtRate.Enabled = true;
+                    txtSalary.Enabled = false;
+                }
+             }   
         }
 
         //Para que cierre la aplicacion luego de abrir el segundo formulario.
