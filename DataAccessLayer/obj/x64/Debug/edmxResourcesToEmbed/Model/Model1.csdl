@@ -15,6 +15,6 @@
     <Property Name="HourlyRate" Type="Double" Nullable="false" />
   </EntityType>
   <EntityType Name="FullTimeEmployee" BaseType="Practico1TSIModel.Employees">
-    <Property Name="Salary" Type="Int16" Nullable="false" />
+    <Property Name="Salary" Type="Int32" Nullable="false" />
   </EntityType>
 </Schema>

@@ -38,6 +38,11 @@
             this.txtDate = new System.Windows.Forms.TextBox();
             this.txtType = new System.Windows.Forms.TextBox();
             this.btnEdit = new System.Windows.Forms.Button();
+            this.txtSalary = new System.Windows.Forms.TextBox();
+            this.txtRate = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblHR = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnAdd
@@ -94,6 +99,7 @@
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 20);
             this.txtId.TabIndex = 5;
+            this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
             // 
             // txtName
             // 
@@ -128,11 +134,58 @@
             this.btnEdit.UseVisualStyleBackColor = true;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
+            // txtSalary
+            // 
+            this.txtSalary.Location = new System.Drawing.Point(326, 117);
+            this.txtSalary.Name = "txtSalary";
+            this.txtSalary.Size = new System.Drawing.Size(100, 20);
+            this.txtSalary.TabIndex = 10;
+            this.txtSalary.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // txtRate
+            // 
+            this.txtRate.Location = new System.Drawing.Point(326, 153);
+            this.txtRate.Name = "txtRate";
+            this.txtRate.Size = new System.Drawing.Size(100, 20);
+            this.txtRate.TabIndex = 11;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(267, 117);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 12;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // lblHR
+            // 
+            this.lblHR.AutoSize = true;
+            this.lblHR.Location = new System.Drawing.Point(257, 160);
+            this.lblHR.Name = "lblHR";
+            this.lblHR.Size = new System.Drawing.Size(63, 13);
+            this.lblHR.TabIndex = 13;
+            this.lblHR.Text = "Hourly Rate";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(270, 116);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(36, 13);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Salary";
+            // 
             // EmployeeAddEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(453, 377);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblHR);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtRate);
+            this.Controls.Add(this.txtSalary);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.txtType);
             this.Controls.Add(this.txtDate);
@@ -153,16 +206,20 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblType;
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.TextBox txtDate;
-        private System.Windows.Forms.TextBox txtType;
         public System.Windows.Forms.TextBox txtId;
-        private System.Windows.Forms.Button btnEdit;
+        public System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblHR;
+        private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Button btnAdd;
+        public System.Windows.Forms.TextBox txtName;
+        public System.Windows.Forms.TextBox txtDate;
+        public System.Windows.Forms.TextBox txtType;
+        public System.Windows.Forms.TextBox txtSalary;
+        public System.Windows.Forms.TextBox txtRate;
     }
 }

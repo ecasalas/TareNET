@@ -21,6 +21,29 @@ C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\ServiceLayer\bin\x64\De
 C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\ServiceLayer\obj\x64\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
 C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\ServiceLayer\obj\x64\Debug\ServiceLayer.exe
 C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\PracticoTSI1\ServiceLayer\obj\x64\Debug\ServiceLayer.pdb
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\ServiceLayer\bin\x64\Debug\ServiceLayer.exe.config
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\ServiceLayer\bin\x64\Debug\ServiceLayer.exe
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\ServiceLayer\bin\x64\Debug\ServiceLayer.pdb
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\ServiceLayer\bin\x64\Debug\BusinessLogicLayer.dll
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\ServiceLayer\bin\x64\Debug\DataAccessLayer.dll
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\ServiceLayer\bin\x64\Debug\EntityFramework.SqlServer.dll
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\ServiceLayer\bin\x64\Debug\MongoDB.Bson.dll
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\ServiceLayer\bin\x64\Debug\MongoDB.Driver.Core.dll
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\ServiceLayer\bin\x64\Debug\MongoDB.Driver.dll
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\ServiceLayer\bin\x64\Debug\Shared.dll
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\ServiceLayer\bin\x64\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\ServiceLayer\bin\x64\Debug\BusinessLogicLayer.pdb
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\ServiceLayer\bin\x64\Debug\Shared.pdb
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\ServiceLayer\bin\x64\Debug\DataAccessLayer.pdb
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\ServiceLayer\bin\x64\Debug\DataAccessLayer.dll.config
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\ServiceLayer\bin\x64\Debug\EntityFramework.xml
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\ServiceLayer\bin\x64\Debug\EntityFramework.SqlServer.xml
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\ServiceLayer\bin\x64\Debug\MongoDB.Bson.xml
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\ServiceLayer\bin\x64\Debug\MongoDB.Driver.xml
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\ServiceLayer\bin\x64\Debug\MongoDB.Driver.Core.xml
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\ServiceLayer\obj\x64\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\ServiceLayer\obj\x64\Debug\ServiceLayer.exe
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\ServiceLayer\obj\x64\Debug\ServiceLayer.pdb
 C:\Users\Admin\Source\Repos\TareNET\ServiceLayer\bin\x64\Debug\ServiceLayer.exe.config
 C:\Users\Admin\Source\Repos\TareNET\ServiceLayer\bin\x64\Debug\ServiceLayer.exe
 C:\Users\Admin\Source\Repos\TareNET\ServiceLayer\bin\x64\Debug\ServiceLayer.pdb

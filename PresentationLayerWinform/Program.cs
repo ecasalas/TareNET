@@ -16,7 +16,10 @@ namespace PresentationLayerWinform
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new EmployeeAddEdit());
             Application.Run(new EmployeeList());
+            
+
 
 
         }

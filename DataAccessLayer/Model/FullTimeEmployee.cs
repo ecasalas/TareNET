@@ -14,6 +14,6 @@ namespace DataAccessLayer.Model
     
     public partial class FullTimeEmployee : Employees
     {
-        public short Salary { get; set; }
+        public int Salary { get; set; }
     }
 }

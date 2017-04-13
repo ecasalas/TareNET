@@ -48,15 +48,18 @@ namespace DataAccessLayer
 
         public List<Employee> GetAllEmployees()
         {
+            Console.WriteLine("Entre a listar Empleados de DataAcces");
             //creo lista vacia de tipo shared para retornar
             List<Employee> empList = new List<Employee>();
 
             var db = new Practico1TSIEntities();
             List<Model.PartTimeEmployee> empQuery = db.EmployeesTPH.OfType<Model.PartTimeEmployee>().ToList();
-
+            Console.WriteLine("Me conecte a la base");
+            
 
             foreach (var emp in empQuery)
             {
+                Console.WriteLine("Entre al Foreach");
                 var objEmp = new Shared.Entities.PartTimeEmployee();
                 objEmp.Id = emp.EmployeeID;
                 objEmp.Name = emp.Name;
@@ -83,16 +86,15 @@ namespace DataAccessLayer
 
         public Employee GetEmployee(int id)
         {
+            Console.WriteLine("entre a la funcion EF");
             Model.Practico1TSIEntities db = new Model.Practico1TSIEntities();
-            var empQuery = (from Employee in db.EmployeesTPH
-                      where Employee.EmployeeID == id
-                      select Employee).FirstOrDefault();
-                      
+            var empQuery = db.EmployeesTPH.Find(id);
+            Console.WriteLine(empQuery.Name);         
 
            
             if (empQuery is Model.PartTimeEmployee)
             {
-
+                Console.WriteLine("entre a PartTimeEmployee");
                 return GetPartTimeEmployee(id);
             }
             else

@@ -34,3 +34,51 @@ C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\bin\x64\Debug\
 C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\bin\x64\Debug\MongoDB.Bson.xml
 C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\bin\x64\Debug\EntityFramework.xml
 C:\Users\Matias\Desktop\TareNET-masterWF\PresentationLayerWinform\bin\x64\Debug\MongoDB.Driver.Core.xml
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.csprojResolveAssemblyReference.cache
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.EmployeeAddEdit.resources
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.EmployeeList.resources
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.Properties.Resources.resources
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.csproj.GenerateResource.Cache
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.exe
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.pdb
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\PresentationLayerWinform\bin\x64\Debug\PresentationLayerWinform.exe.config
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\PresentationLayerWinform\bin\x64\Debug\PresentationLayerWinform.exe
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\PresentationLayerWinform\bin\x64\Debug\PresentationLayerWinform.pdb
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\PresentationLayerWinform\bin\x64\Debug\DataAccessLayer.dll
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\PresentationLayerWinform\bin\x64\Debug\Shared.dll
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\PresentationLayerWinform\bin\x64\Debug\MongoDB.Driver.dll
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\PresentationLayerWinform\bin\x64\Debug\MongoDB.Bson.dll
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\PresentationLayerWinform\bin\x64\Debug\EntityFramework.dll
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\PresentationLayerWinform\bin\x64\Debug\MongoDB.Driver.Core.dll
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\PresentationLayerWinform\bin\x64\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\PresentationLayerWinform\bin\x64\Debug\DataAccessLayer.pdb
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\PresentationLayerWinform\bin\x64\Debug\DataAccessLayer.dll.config
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\PresentationLayerWinform\bin\x64\Debug\Shared.pdb
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\PresentationLayerWinform\bin\x64\Debug\MongoDB.Driver.xml
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\PresentationLayerWinform\bin\x64\Debug\MongoDB.Bson.xml
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\PresentationLayerWinform\bin\x64\Debug\EntityFramework.xml
+C:\Users\Hp\Desktop\TSI1 .NET\Practico .net\MERGEADO\PresentationLayerWinform\bin\x64\Debug\MongoDB.Driver.Core.xml
+C:\Users\Admin\Source\Repos\TareNET\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Source\Repos\TareNET\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.EmployeeAddEdit.resources
+C:\Users\Admin\Source\Repos\TareNET\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.EmployeeList.resources
+C:\Users\Admin\Source\Repos\TareNET\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.Properties.Resources.resources
+C:\Users\Admin\Source\Repos\TareNET\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.csproj.GenerateResource.Cache
+C:\Users\Admin\Source\Repos\TareNET\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.exe
+C:\Users\Admin\Source\Repos\TareNET\PresentationLayerWinform\obj\x64\Debug\PresentationLayerWinform.pdb
+C:\Users\Admin\Source\Repos\TareNET\PresentationLayerWinform\bin\x64\Debug\PresentationLayerWinform.exe.config
+C:\Users\Admin\Source\Repos\TareNET\PresentationLayerWinform\bin\x64\Debug\PresentationLayerWinform.exe
+C:\Users\Admin\Source\Repos\TareNET\PresentationLayerWinform\bin\x64\Debug\PresentationLayerWinform.pdb
+C:\Users\Admin\Source\Repos\TareNET\PresentationLayerWinform\bin\x64\Debug\DataAccessLayer.dll
+C:\Users\Admin\Source\Repos\TareNET\PresentationLayerWinform\bin\x64\Debug\Shared.dll
+C:\Users\Admin\Source\Repos\TareNET\PresentationLayerWinform\bin\x64\Debug\MongoDB.Driver.dll
+C:\Users\Admin\Source\Repos\TareNET\PresentationLayerWinform\bin\x64\Debug\MongoDB.Bson.dll
+C:\Users\Admin\Source\Repos\TareNET\PresentationLayerWinform\bin\x64\Debug\EntityFramework.dll
+C:\Users\Admin\Source\Repos\TareNET\PresentationLayerWinform\bin\x64\Debug\MongoDB.Driver.Core.dll
+C:\Users\Admin\Source\Repos\TareNET\PresentationLayerWinform\bin\x64\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Admin\Source\Repos\TareNET\PresentationLayerWinform\bin\x64\Debug\DataAccessLayer.pdb
+C:\Users\Admin\Source\Repos\TareNET\PresentationLayerWinform\bin\x64\Debug\DataAccessLayer.dll.config
+C:\Users\Admin\Source\Repos\TareNET\PresentationLayerWinform\bin\x64\Debug\Shared.pdb
+C:\Users\Admin\Source\Repos\TareNET\PresentationLayerWinform\bin\x64\Debug\MongoDB.Driver.xml
+C:\Users\Admin\Source\Repos\TareNET\PresentationLayerWinform\bin\x64\Debug\MongoDB.Bson.xml
+C:\Users\Admin\Source\Repos\TareNET\PresentationLayerWinform\bin\x64\Debug\EntityFramework.xml
+C:\Users\Admin\Source\Repos\TareNET\PresentationLayerWinform\bin\x64\Debug\MongoDB.Driver.Core.xml

@@ -13,14 +13,14 @@
         <MappingFragment StoreEntitySet="EmployeesTPH">
           <ScalarProperty Name="HourlyRate" ColumnName="RATE" />
           <ScalarProperty Name="EmployeeID" ColumnName="EMP_ID" />
-          <Condition ColumnName="TYPE_EMP" Value="1" />
+          <Condition ColumnName="TYPE_EMP" Value="2" />
         </MappingFragment>
       </EntityTypeMapping>
       <EntityTypeMapping TypeName="IsTypeOf(Practico1TSIModel.FullTimeEmployee)">
         <MappingFragment StoreEntitySet="EmployeesTPH">
           <ScalarProperty Name="Salary" ColumnName="SALARY" />
           <ScalarProperty Name="EmployeeID" ColumnName="EMP_ID" />
-          <Condition ColumnName="TYPE_EMP" Value="2" />
+          <Condition ColumnName="TYPE_EMP" Value="1" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

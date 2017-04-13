@@ -1,5 +1,6 @@
-﻿using BusinessLogicLayer;
+﻿//using BusinessLogicLayer;
 using DataAccessLayer;
+using PresentationLayerWinform.ServiceEmployeesReferencia;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Shared.Entities;
+//using Shared.Entities;
 
 
 namespace PresentationLayerWinform
@@ -23,7 +24,8 @@ namespace PresentationLayerWinform
 
         private void EmployeeAddEdit_Load(object sender, EventArgs e)
         {
-
+            txtRate.Enabled = false;
+            txtSalary.Enabled = false;
         }
 
         //no entiendo por que me pone button1 al nombre del metodo, si en las propiedades le puse que se llamara edit :S
@@ -33,27 +35,27 @@ namespace PresentationLayerWinform
         //DE TODOS MODOS EL FUNCIONAMIENTO DE LOS FORMULARIOS QUEDO PRONTO, HACE LO QUE TIENE QUE HACER CON LOS DATOS DE PRUEBA.
         private void button1_Click(object sender, EventArgs e)
         {
-            //Tengo que crear un objeto empleado con los datos ingresados por el usuario en los txtboxs para luego llamar al metodo addEmployee
+            ServiceEmployeesClient cliente = new ServiceEmployeesClient();
 
-            /* --------------
-            ///estas siguientes tres lineas no tengo claro si funcionan, pareciera, pero no he podido testear toda esta garcha de la bd por mi incapacidad
-            ///de llamar a los putos metodos y traer la data de la alta base de data.
-            int intType;
-            intType = Convert.ToInt32(txtBoxType.Text);
-            intType = int.Parse(txtBoxType.Text);
-            if (intType == 1) //si es parttyme
-            {
-                
-            }
-            else //sino, si es fulltime, o viscevera, ya esta altura no me acuerdo cual era 1 y cual dos..
+            if ((Convert.ToInt32(this.txtType.Text)) == 1)
             {
 
+                FullTimeEmployee fte = new FullTimeEmployee();
+                fte.Id = Convert.ToInt32(this.txtId.Text);
+                fte.Name = Convert.ToString(this.txtName.Text);
+                fte.StartDate = Convert.ToDateTime(this.txtDate.Text);
+                //fte.Salary = Convert.ToInt32(this.txtSalary);
+                cliente.AddEmployee(fte);
             }
-
-            Employee emp = new PartTimeEmployee();
-            IDALEmployees x;
-            BLEmployees lala = new BLEmployees(x);
-            -----------------*/
+            else
+            {
+                PartTimeEmployee pte = new PartTimeEmployee();
+                pte.Id = Convert.ToInt32(this.txtId.Text);
+                pte.Name = Convert.ToString(this.txtName.Text);
+                pte.StartDate = Convert.ToDateTime(this.txtDate.Text);
+                //pte.HourlyRate = Convert.ToInt32(this.txtRate);
+                cliente.AddEmployee(pte);
+            }
 
             MessageBox.Show("Empleado creado con éxito cabrón, a tomar por culo!");
         }
@@ -65,7 +67,11 @@ namespace PresentationLayerWinform
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
-
+            if (this.txtType.Text != "")
+                if (Convert.ToInt32(this.txtType.Text) == 1)
+                {
+                    txtSalary.Enabled = true;
+                }
         }
 
         //Para que cierre la aplicacion luego de abrir el segundo formulario.
@@ -78,7 +84,7 @@ namespace PresentationLayerWinform
         {
             //Editamos los datos de un empleado ya existente (menos el ID)
             //Primero buscamos el empleado en la bd, lo traemos como shared entities (? (todavia no termine de entender :S)
-
+            /*
             if (Convert.ToInt32(txtType) == 1) //si es full --ACA ME TIRA UNA EXCEPCION AL EDITAR POR UN PROBLEMA CON LA CONVERSION / COMPARACION (tal vez con int.tryparse)
             {
                 Shared.Entities.FullTimeEmployee ftEmp = new FullTimeEmployee();
@@ -98,6 +104,7 @@ namespace PresentationLayerWinform
                 ptEmp.StartDate = (txtToDate);
                 //Luego de setear los valores, tengo que guardar el nuevo empleado (shEmp) en la base
             }
+            */
 
         }
 
@@ -105,5 +112,25 @@ namespace PresentationLayerWinform
             {
 
             }
+
+        private void txtId_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

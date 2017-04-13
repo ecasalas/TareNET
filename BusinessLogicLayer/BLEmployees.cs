@@ -38,15 +38,18 @@ namespace BusinessLogicLayer
 
         public List<Employee> GetAllEmployees()
         {
+            Console.WriteLine("Entre a Listar Empleados de Busines");
             List<Employee> lemp = _dal.GetAllEmployees();
-
+            
             return lemp;
             
         }
 
         public Employee GetEmployee(int id)
         {
+            Console.WriteLine("Entre  a Businees ");
             Employee emp = _dal.GetEmployee(id);
+            Console.WriteLine(emp.Name);
             return emp;
            
         }
