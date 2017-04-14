@@ -44,7 +44,7 @@ namespace PresentationLayerWinform
                 fte.Id = Convert.ToInt32(this.txtId.Text);
                 fte.Name = Convert.ToString(this.txtName.Text);
                 fte.StartDate = Convert.ToDateTime(this.txtDate.Text);
-                //fte.Salary = Convert.ToInt32(this.txtSalary);
+                fte.Salary = Convert.ToInt32(this.txtSalary);
                 cliente.AddEmployee(fte);
             }
             else
@@ -53,7 +53,7 @@ namespace PresentationLayerWinform
                 pte.Id = Convert.ToInt32(this.txtId.Text);
                 pte.Name = Convert.ToString(this.txtName.Text);
                 pte.StartDate = Convert.ToDateTime(this.txtDate.Text);
-                //pte.HourlyRate = Convert.ToInt32(this.txtRate);
+                pte.HourlyRate = Convert.ToInt32(this.txtRate);
                 cliente.AddEmployee(pte);
             }
 
