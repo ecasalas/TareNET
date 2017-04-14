@@ -90,6 +90,27 @@ namespace PresentationLayerWinform
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
+            ServiceEmployeesClient cliente = new ServiceEmployeesClient();
+
+            if ((Convert.ToInt32(this.txtType.Text)) == 1)
+            {
+                FullTimeEmployee fte = new FullTimeEmployee();
+                fte.Id = Convert.ToInt32(this.txtId.Text);
+                fte.Name = Convert.ToString(this.txtName.Text);
+                fte.StartDate = Convert.ToDateTime(this.txtDate.Text);
+                fte.Salary = Convert.ToInt32(this.txtSalary);
+                cliente.UpdateEmployee(fte);
+
+            }
+            else
+            {
+                PartTimeEmployee pte = new PartTimeEmployee();
+                pte.Id = Convert.ToInt32(this.txtId.Text);
+                pte.Name = Convert.ToString(this.txtName.Text);
+                pte.StartDate = Convert.ToDateTime(this.txtDate.Text);
+                pte.HourlyRate = Convert.ToInt32(this.txtRate);
+                cliente.UpdateEmployee(pte);
+            }
             //Editamos los datos de un empleado ya existente (menos el ID)
             //Primero buscamos el empleado en la bd, lo traemos como shared entities (? (todavia no termine de entender :S)
             /*
